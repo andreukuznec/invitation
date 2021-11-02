@@ -1,0 +1,46 @@
+<head>
+  <style>
+body{
+  background-color: pink;
+}
+
+        .center-img {
+        display: table-cell;
+        text-align: center;
+        color: purple;
+        vertical-align: middle;
+      }
+
+      .FIO {
+        color: #007539;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+      }
+p {text-align: center;}
+      .border-img {
+        border: 3px solid black;
+      }
+
+  </style>
+</head>>
+<body>
+  <h1>Cвидетельстов о регистрации брака</h1>
+  <h2 class="FIO"> Кузнецов Андрей Павлович </h2>
+  <h3> Дата рождения: 01.10.2003 </h3>
+  <h2> И </h2>
+  <h2 class="FIO"> Соколова Ольга Витальевна </h2>
+  <h3> Дата рождения: 17.02.2003 </h3>
+  <p > Заключили брак 24.03.2021 и любят друг друга по сей день </p>
+  <a href="https://photos.app.goo.gl/CzBFc7EJ6pcAfuR89"><img class="border-img" src="https://i.imgur.com/F4R2LaR.png" alt="Click here for more photos."></a>
+
+</body>
