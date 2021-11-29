@@ -1,78 +1,61 @@
 <html>
 <head>
-  <style>
-body{
-  background-color: pink;
-  font-family: Monospace;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+	background-color: #0000ff;
+font-family: 'Amatic SC', cursive;}
+.caveat {
+	font-family: 'Caveat', cursive;
 }
-img { display:block;
-margin: auto;}
-p {
-	font-family: monospace;
-	font-size: 19px;
+
+.animate {
+	position: relative;
+	margin: auto;
+	  width:260px;
+	  height:360px;
 }
-
-        .center-img {
-        display: table-cell;
-        text-align: center;
-        color: purple;
-        vertical-align: middle;
-      }
-
-      .FIO {
-        color: #04857e;
-		
-      }
-iframe {
-	display: table-cell;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 5px solid rosybrown;
+.animate img{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:260px;
+	  height:360px;
 }
-      h1 {
-        text-align: center;
-		font-family: Monospace;
-      }
-
-      h2 {
-        text-align: center;
-      }
-
-      h3 {
-        text-align: center;
-      }
-p {text-align: center;}
-      .border-img {
-        border: 3px solid rosybrown;
-      }
-	
-.text {
-	margin-top: 70px;
-	font-size: 20px;
-	text-align: center;
-	font-family: monospace;
-	margin-bottom: 35px;
+.orange { color: #f5770a;}
+.red {color: #f80000;}
+.center {text-align: center;}
+.img2 {
+	opacity: 0;
 }
-  </style>
-</head>>
-<body>
-<item>
-  <h1>Cтраничка Олечки и Андрея</h1>
-  </item>
-  <h2 class="FIO"> Кузнецов Андрей Павлович </h2>
-  <h3> Дата рождения: 01.10.2003 </h3>
-  <h2> И </h2>
-  <h2 class="FIO"> Соколова Ольга Витальевна </h2>
-  <h3> Дата рождения: 17.02.2003 </h3>
-  <p  > Заключили союз 24.03.2021 и любят друг друга по сей день </p>
-  <a href="https://photos.app.goo.gl/CzBFc7EJ6pcAfuR89"><img class="border-img" src="https://i.imgur.com/F4R2LaR.png" alt="Click here for more photos."></a>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CxjeB91XE-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p class="text">Любовь не покидала их во всех этих городах, 
-и это еще далеко не конец</p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92455.2494551627!2d39.65508875371283!3d43.60182443340326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5d4e111834423%3A0x6e6f61866a5d5df8!2zU2_EjWksIEtyYXNub2RhcnNrw70ga3JhaiwgUnVza28!5e0!3m2!1scs!2scz!4v1635963106286!5m2!1scs!2scz" width="560" height="200" style="border:3;" allowfullscreen="" loading="lazy"></iframe>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156157.85557223196!2d104.12707433464108!3d52.29846261070159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da83ad353e2f665%3A0x31d6cd1456d8e94e!2sIrkutsk%2C%20Irkutsk%C3%A1%20oblast%2C%20Rusko!5e0!3m2!1scs!2scz!4v1635963208715!5m2!1scs!2scz" width="560" height="200" style="border:3;" allowfullscreen="" loading="lazy"></iframe>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d342188.9375753508!2d37.49646438156685!3d55.70755743206503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoskva%2C%20Rusko!5e0!3m2!1scs!2scz!4v1635963291904!5m2!1scs!2scz" width="560" height="200" style="border:3;" allowfullscreen="" loading="lazy"></iframe>
+.animate:hover img.img2 {
+	opacity: 1;
+	transition: all 2s ease;
+transform: scale (1.5);
+}
+.animate:hover img.img1 {
+	opacity: 0;
+	transition: all 2s ease;
+	transform: scale (1.5);
+}
+.animate:hover {
+	transform: scale (1.5);
+}
+</style>
+</head>
+<div class='animate'>
+<img class= 'img1' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
+<img class= 'img2' src="https://lh3.googleusercontent.com/pw/AM-JKLXpIrrad2jbDAcFAvbfuZLLP5f1GnRI56nPxRydAkk72HhCuIkZVIJN0q70oqn6IS2EAyT6mePrCCj9MS0Slrpuporn--Ava29WkeNsWOYm5RFr-AO2BM1Qd4l2VAB_VBaGDoixqZUfDYCk-sVEjleUfA=w522-h696-no?authuser=0" >
 
-</body>
+</div>
+<h1 class='red center'  > НУ привет красавчик</h1>
+<h1 class='orange caveat'  > НУ привет красавчик</h1>
+
 </html>
