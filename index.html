@@ -1,74 +1,109 @@
 <html>
-<head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
 
-<style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-body {
-	background-color: #0000ff;
-font-family: 'Amatic SC', cursive;}
-.caveat {
-	font-family: 'Caveat', cursive;
-}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&display=swap" rel="stylesheet">
 
-.animate {
-position: relative;	 
-float: left;
-margin-right: 15px;
-margin-left: 15px;
-margin-top: 100px;
- text-align: center;
- width:260px;
- height:360px;
-  
-}
-.animate img{
-	position: absolute;
-	width:260px;
-	  height:360px;
+  <style>
+    body {
+      background-color: #0000ff;
+      font-family: 'Amatic SC', cursive;
+      box-sizing: border-box;
+    }
 
-}
-.orange { color: #f5770a;}
-.red {color: #f80000;}
-.center {text-align: center;}
-.img2 {
-	opacity: 0;
-}
-.animate:hover img.img2 {
-	opacity: 1;
-	transition: all 2s ease;
-transform: scale(1.3);
-}
-.animate:hover img.img1 {
-	opacity: 0;
-	transition: all 2s ease;
-	
-}
+    .caveat {
+      font-family: 'Caveat', cursive;
 
-</style>
-</head>
-<audio autoplay loop>
-  <source src="https://docs.google.com/uc?export=download&id=1P043Tq3qkRYAV_XoS5zwclvDmY76oVap" type="audio/mpeg">
-</audio>
+    }
 
-<div class='animate'>
-<img class= 'img1' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
-<img class= 'img2' src="https://lh3.googleusercontent.com/pw/AM-JKLXpIrrad2jbDAcFAvbfuZLLP5f1GnRI56nPxRydAkk72HhCuIkZVIJN0q70oqn6IS2EAyT6mePrCCj9MS0Slrpuporn--Ava29WkeNsWOYm5RFr-AO2BM1Qd4l2VAB_VBaGDoixqZUfDYCk-sVEjleUfA=w522-h696-no?authuser=0" >
-</div>
-<div class='animate'>
-<img class= 'img1 img3' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
-<img class= 'img2 img3' src="https://lh3.googleusercontent.com/pw/AM-JKLVZdgE8Ftd5gKbXOCgOXQ_TkywJgN5IQd55RX9DXibVZJKjEf_sgf07z3PkcCgF8SeEr3PsvYEwXK_Ijwa6g4aOZ3aUFjEvnDxsJXcC_9q3_X04PzE5PC8ggPandtNMtpap6wQeKXUcE_BBDKECrTlYXw=w388-h692-no?authuser=0" >
-</div>
-<div class='animate'>
-<img class= 'img1 img3' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
-<img class= 'img2 img3' src="https://lh3.googleusercontent.com/pw/AM-JKLWGCkC4ewhViUsS1FTSH2Lv9xCqWYZNQmgRS-Rq6FcxEMGlzkFHBwRI4TQzhlSBEIgBT9zdWkpeITFdc5JZu8NimmAFNJt-AkQlGXiPvLwoZdVZ59B-ndI9kHFrnuv_eJ3lgrDkay9zr-xstfyZxo19XQ=w522-h696-no?authuser=0" >
-</div>
+    .line {
+      border-bottom: 1px solid #f80000;
+      margin-top: 100px;
+      position: relative;
+      float: auto;
+    }
+
+    hr {
+      margin-top: 50px;
+    }
+
+    .animate {
+      position: relative;
+      float: left;
+      margin-right: 15px;
+      margin-left: auto;
+      margin-top: 100px;
+      text-align: center;
+      width: 260px;
+      height: 360px;
+	  margin-bottom: 150px;
+
+    }
+
+    .animate img {
+      position: absolute;
+      width: 260px;
+      height: 360px;
+
+    }
+
+    .orange {
+      color: #f5770a;
+    }
+
+    .red {
+      color: #f80000;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .img2 {
+      opacity: 0;
+    }
+
+    .animate:hover img.img2 {
+      opacity: 1;
+      transition: all 2s ease;
+      transform: scale(1.3);
+    }
+
+    .animate:hover img.img1 {
+      opacity: 0;
+      transition: all 2s ease;
+
+    }
+
+  </style>
+
+  <head>
+    <audio autoplay loop>
+      <source src="https://docs.google.com/uc?export=download&id=1P043Tq3qkRYAV_XoS5zwclvDmY76oVap" type="audio/mpeg">
+    </audio>
+
+    <div class='animate'>
+      <img class='img1' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
+      <img class='img2' src="https://lh3.googleusercontent.com/pw/AM-JKLXpIrrad2jbDAcFAvbfuZLLP5f1GnRI56nPxRydAkk72HhCuIkZVIJN0q70oqn6IS2EAyT6mePrCCj9MS0Slrpuporn--Ava29WkeNsWOYm5RFr-AO2BM1Qd4l2VAB_VBaGDoixqZUfDYCk-sVEjleUfA=w522-h696-no?authuser=0">
+    </div>
+    <div class='animate'>
+      <img class='img1 img3' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
+      <img class='img2 img3' src="https://lh3.googleusercontent.com/pw/AM-JKLVZdgE8Ftd5gKbXOCgOXQ_TkywJgN5IQd55RX9DXibVZJKjEf_sgf07z3PkcCgF8SeEr3PsvYEwXK_Ijwa6g4aOZ3aUFjEvnDxsJXcC_9q3_X04PzE5PC8ggPandtNMtpap6wQeKXUcE_BBDKECrTlYXw=w388-h692-no?authuser=0">
+    </div>
+    <div class='animate'>
+      <img class='img1 img3' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
+      <img class='img2 img3' src="https://lh3.googleusercontent.com/pw/AM-JKLWGCkC4ewhViUsS1FTSH2Lv9xCqWYZNQmgRS-Rq6FcxEMGlzkFHBwRI4TQzhlSBEIgBT9zdWkpeITFdc5JZu8NimmAFNJt-AkQlGXiPvLwoZdVZ59B-ndI9kHFrnuv_eJ3lgrDkay9zr-xstfyZxo19XQ=w522-h696-no?authuser=0">
+    </div>
+  </head>
+
+  <body>
+    <hr size=2px color=#f80000 width=1000px align="center">
 
 
+  </body>
 
 </html>
