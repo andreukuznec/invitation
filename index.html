@@ -33,39 +33,82 @@
     .animate {
       position: relative;
       float: left;
-  margin:50px 15px 60px;
+      margin: 50px 15px 60px;
       text-align: center;
       width: 260px;
       height: 360px;
 
-	  
+
 
     }
 
-.photo{
-	position: relative;
+    .photodiv3 {
+      position: relative;
       float: left;
-	  margin-top: 50px;
-	  text-align: center;
+      text-align: center;
       width: 260px;
       height: 360px;
 
-}
+	transform: rotate(-10deg); 
+	margin-top: 5px;
 
+    }
 
-    .photo img {
-         position: absolute;
+    .photodiv2 {
+      position: relative;
+      float: left;
+      margin-top: 5px;
+      text-align: center;
+      width: 260px;
+      height: 360px;
+      z-index: 900;
+
+    }
+
+    .photodiv1 {
+      margin-left: 50px;
+      transform: rotate(10deg);
+      position: relative;
+      float: left;
+      margin-top: 5px;
+      text-align: center;
       width: 260px;
       height: 360px;
 
+    }
 
-}
+    .photo2 {
+      position: relative;
+      float: left;
+      margin-top: 50px;
+      text-align: center;
+      width: 260px;
+      height: 360px;
+
+    }
+	 .photo3 {
+      position: relative;
+      float: left;
+      margin-top: 50px;
+      text-align: center;
+      width: 260px;
+      height: 360px;}
+	   .photo1 {
+      position: relative;
+      float: left;
+      margin-top: 50px;
+      text-align: center;
+      width: 260px;
+      height: 360px;
+	  }
+
+
 
     .animate img {
       position: absolute;
       width: 260px;
       height: 360px;
-text-align:center;
+      text-align: center;
     }
 
     .orange {
@@ -96,6 +139,24 @@ text-align:center;
 
     }
 
+    .photodiv1:hover img.photo1 {
+      transition: all 2s ease;
+      transform: rotate(-10deg)scale(1.5)translatex(-100px);
+ 
+    }
+
+    .photodiv2:hover img.photo2 {
+      transition: all 2s ease;
+      transform: scale(1.5)rotate(360deg);
+
+
+    }
+ .photodiv3:hover img.photo3 {
+      transition: all 2s ease;
+      transform: scale(1.5)rotate(10deg)translatex(100px);
+
+
+    }
   </style>
 
   <head>
@@ -119,19 +180,23 @@ text-align:center;
 
   <body>
     <hr size=2px color=#f80000 width=1000px align="center">
-<div class='photo' style="margin-left:50px; margin-right: -40px; transform: rotate(-10deg);" >
-<img src="https://lh3.googleusercontent.com/pw/AM-JKLVIM01oczOGuCgkFG6RnDM7ActmX39gRMtmuTPCrTbOatJ65WvMgXpbUPubwP1_46-s4AW6ugbRSxyyPPu6dC_G_fcDq9RXBlvZH5cmFufcGxDo_Xp4R69jTH3rmWvVTohDVadDdzw6lT3nKhwOQnwl7Q=w392-h696-no?authuser=0">
-</div>
-<div class='photo' style="z-index: 500; margin-top: 15px " >
+    <div class='photodiv1'>
+      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLVIM01oczOGuCgkFG6RnDM7ActmX39gRMtmuTPCrTbOatJ65WvMgXpbUPubwP1_46-s4AW6ugbRSxyyPPu6dC_G_fcDq9RXBlvZH5cmFufcGxDo_Xp4R69jTH3rmWvVTohDVadDdzw6lT3nKhwOQnwl7Q=w392-h696-no?authuser=0">
+    </div>
 
-<img src="https://lh3.googleusercontent.com/pw/AM-JKLWpwVrIpvKBjtshUQ1JoZse8Nvafv0H2RIcUFs-4ksFE4_C35IdmdHXCX9C1AL_PVq6x5rSHintW0qavUW3Ml_EDGPgVztvjUk-FKbSJuJ4mr9ZbMiHGAz5zvG2xQRgnXnX1xygpA_BeGDM5jEmTABnIw=w522-h696-no?authuser=0">
-</div>
+    <div class='photodiv2'>
 
-<div class='photo' style="margin-left: -40px; transform: rotate(10deg); margin-top: 5px;">
+      <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLWpwVrIpvKBjtshUQ1JoZse8Nvafv0H2RIcUFs-4ksFE4_C35IdmdHXCX9C1AL_PVq6x5rSHintW0qavUW3Ml_EDGPgVztvjUk-FKbSJuJ4mr9ZbMiHGAz5zvG2xQRgnXnX1xygpA_BeGDM5jEmTABnIw=w522-h696-no?authuser=0">
 
-<img src="https://lh3.googleusercontent.com/pw/AM-JKLWcjMpTjcO2pvdG6kav0hRuzv1g9eZxtVIHXyKLF0bwyjejtsEq68oWLkZWshzCCHqEkH7nRrvKIUjQYZEt5AjFFX0ej4SoT79K2YtpJeIDUKuURyp0YWslkq8LzQoXXBAYKmiqvRrhWYpZSnPg8FryLQ=w522-h696-no?authuser=0">
 
-</div>
+    </div>
+
+
+    <div class='photodiv3' >
+
+      <img class='photo3'src="https://lh3.googleusercontent.com/pw/AM-JKLWcjMpTjcO2pvdG6kav0hRuzv1g9eZxtVIHXyKLF0bwyjejtsEq68oWLkZWshzCCHqEkH7nRrvKIUjQYZEt5AjFFX0ej4SoT79K2YtpJeIDUKuURyp0YWslkq8LzQoXXBAYKmiqvRrhWYpZSnPg8FryLQ=w522-h696-no?authuser=0">
+
+    </div>
 
 
   </body>
