@@ -86,9 +86,10 @@
 
     }
 
-    .photo2 {
-      position: relative;
-      float: left;
+
+.photo2 {
+      position: absolute;
+
       text-align: center;
       width: 260px;
       height: 360px;
@@ -96,27 +97,31 @@
 
     }
 
-    .photo3 {
-      position: relative;
-      float: left;
-      text-align: center;
+    .photodiv1 img {
+       position: absolute;
       width: 260px;
       height: 360px;
+      text-align: center;
       outline: 2px solid #fee1e8;
 
     }
 
-    .photo1 {
-      position: relative;
-      float: left;
-      text-align: center;
+ .photodiv2 img {
+       position: absolute;
       width: 260px;
       height: 360px;
+      text-align: center;
       outline: 2px solid #fee1e8;
 
     }
+	 .photodiv3 img {
+       position: absolute;
+      width: 260px;
+      height: 360px;
+      text-align: center;
+      outline: 2px solid #fee1e8;
 
-
+    }
 
     .animate img {
       position: absolute;
@@ -125,53 +130,54 @@
       text-align: center;
     }
 
-    .orange {
-      color: #f5770a;
-    }
-
-    .red {
-      color: #f80000;
-    }
-
-    .center {
-      text-align: center;
-    }
 
     .img2 {
       opacity: 0;
     }
-
+.photo {
+	opacity:0
+}
+.photodiv1:hover img.photo2 {
+	opacity:0;
+	transition: all 0.3s ease;
+}
+.photodiv1:hover img.photo {
+	opacity:1;
+	transition: all 2s ease;
+	transform: scale(1.3);
+}
     .animate:hover img.img2 {
       opacity: 1;
       transition: all 2s ease;
       transform: scale(1.3);
     }
 
-    .animate:hover div.img {
+    .animate:hover img.img1 {
       opacity: 0;
-      transition: all 2s ease;
+      transition: all 0.3s ease;
 
     }
 
-    .photodiv1:hover img.photo1 {
-      transition: all 2s ease;
-      transform: rotate(-10deg)scale(1.5)translatex(-100px);
-
-    }
-
-    .photodiv2:hover img.photo2 {
-      transition: all 2s ease;
-      transform: scale(1.5)rotate(360deg);
-
-
-    }
-
-    .photodiv3:hover img.photo3 {
-      transition: all 2s ease;
-      transform: scale(1.5)rotate(10deg)translatex(100px);
+ .photodiv2:hover img.photo2 {
+	opacity:0;
+	transition: all 0.3s ease;
+}
+.photodiv2:hover img.photo {
+	opacity:1;
+	transition: all 2s ease;
+	transform: scale(1.3);
+}
 
 
-    }
+.photodiv3:hover img.photo2 {
+	opacity:0;
+	transition: all 0.3s ease;
+}
+.photodiv3:hover img.photo {
+	opacity:1;
+	transition: all 2s ease;
+	transform: scale(1.3);
+}
 	.separator h1{
 		top:-95px;
 		position:relative;
@@ -203,7 +209,7 @@
 	</div>
 	
     <div class='animate'>
-      <img class='img1 img3' src=https://lh3.googleusercontent.com/pw/AM-JKLWNovuRm8Tx9CQb5zWYdEux3GQQKnfXnA6SOrVB-iUx_ywxKfT5zjGGj_MtAPZ7sxJM4CIv5Sjiuibv0R0y6w_1umPZy7iIykmhEvqCYfrAf_dnTiqLGCiK4WoMjMTIQ8Njkykgx5TV0t4-pKM7R9xk3Q=w981-h696-no?authuser=0>
+      <img class='img1 img3' src=https://lh3.googleusercontent.com/pw/AM-JKLXLwSybCmeGJStNidWljxIm9uE62MLmo-XRnj-qfbyCf1zi_H5DMNwQeIK_io0n7DsWNlc8XkvIS-22oM3VyhUTimuO-O8li4fhbmelQUjrecBKi6OdutDWWM3uT1xipFoacMtloMoiXYtr4GKkG1dk-Q=w260-h360-no?authuser=0>
       <img class='img2 img3' src="https://lh3.googleusercontent.com/pw/AM-JKLWGCkC4ewhViUsS1FTSH2Lv9xCqWYZNQmgRS-Rq6FcxEMGlzkFHBwRI4TQzhlSBEIgBT9zdWkpeITFdc5JZu8NimmAFNJt-AkQlGXiPvLwoZdVZ59B-ndI9kHFrnuv_eJ3lgrDkay9zr-xstfyZxo19XQ=w522-h696-no?authuser=0">
      <div class="div-table-cell">
          <p>Приглашение на свидание</p>
@@ -218,66 +224,84 @@
    </div>
    
    <div class='photodiv1'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLVIM01oczOGuCgkFG6RnDM7ActmX39gRMtmuTPCrTbOatJ65WvMgXpbUPubwP1_46-s4AW6ugbRSxyyPPu6dC_G_fcDq9RXBlvZH5cmFufcGxDo_Xp4R69jTH3rmWvVTohDVadDdzw6lT3nKhwOQnwl7Q=w392-h696-no?authuser=0">
+   <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLVIM01oczOGuCgkFG6RnDM7ActmX39gRMtmuTPCrTbOatJ65WvMgXpbUPubwP1_46-s4AW6ugbRSxyyPPu6dC_G_fcDq9RXBlvZH5cmFufcGxDo_Xp4R69jTH3rmWvVTohDVadDdzw6lT3nKhwOQnwl7Q=w392-h696-no?authuser=0">
+
     </div>
 
     <div class='photodiv2'>
-      <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLWpwVrIpvKBjtshUQ1JoZse8Nvafv0H2RIcUFs-4ksFE4_C35IdmdHXCX9C1AL_PVq6x5rSHintW0qavUW3Ml_EDGPgVztvjUk-FKbSJuJ4mr9ZbMiHGAz5zvG2xQRgnXnX1xygpA_BeGDM5jEmTABnIw=w522-h696-no?authuser=0">
+	   <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLWpwVrIpvKBjtshUQ1JoZse8Nvafv0H2RIcUFs-4ksFE4_C35IdmdHXCX9C1AL_PVq6x5rSHintW0qavUW3Ml_EDGPgVztvjUk-FKbSJuJ4mr9ZbMiHGAz5zvG2xQRgnXnX1xygpA_BeGDM5jEmTABnIw=w522-h696-no?authuser=0">
     </div>
 
 
     <div class='photodiv1'>
-      <img class='photo3' src="https://lh3.googleusercontent.com/pw/AM-JKLWcjMpTjcO2pvdG6kav0hRuzv1g9eZxtVIHXyKLF0bwyjejtsEq68oWLkZWshzCCHqEkH7nRrvKIUjQYZEt5AjFFX0ej4SoT79K2YtpJeIDUKuURyp0YWslkq8LzQoXXBAYKmiqvRrhWYpZSnPg8FryLQ=w522-h696-no?authuser=0">
+	   <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLWcjMpTjcO2pvdG6kav0hRuzv1g9eZxtVIHXyKLF0bwyjejtsEq68oWLkZWshzCCHqEkH7nRrvKIUjQYZEt5AjFFX0ej4SoT79K2YtpJeIDUKuURyp0YWslkq8LzQoXXBAYKmiqvRrhWYpZSnPg8FryLQ=w522-h696-no?authuser=0">
     </div>
 	
 <div class='photodiv3'>
-      <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLXGGpnefl9gVOfR2Nae2B5-aAro_IiYXXitEAfETyUaO6n9sd05s0sdkOFVmrIJI8gnS3VYzANLNO-Xpaz1fPWQcDEbHnYnRxsWz2T0f2APxv5o8RLY8BbcV7byV0MNivpQgws0IR-RG9LF3f3j2pMNPQ=w464-h696-no?authuser=0">
+   <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLXGGpnefl9gVOfR2Nae2B5-aAro_IiYXXitEAfETyUaO6n9sd05s0sdkOFVmrIJI8gnS3VYzANLNO-Xpaz1fPWQcDEbHnYnRxsWz2T0f2APxv5o8RLY8BbcV7byV0MNivpQgws0IR-RG9LF3f3j2pMNPQ=w464-h696-no?authuser=0">
     </div>
 	
 	<div class='photodiv3'>
-      <img class='photo3' src="https://lh3.googleusercontent.com/pw/AM-JKLXvAlrscv4sKMWpNJ6sIrwSPdCEH4ZBIyDcnrX6J5ew_Yp8zIXzUVtc8ANn7YSkUOATIO5RKDP2DC_vrVuy5Wre5y3FiO-9c8Fhkr1aNBvja7I7hZalVj4QUt1g0zc3DifPfb6_KLHfP3-5Udm5CkT7Ng=w442-h696-no?authuser=0">
+	   <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLXvAlrscv4sKMWpNJ6sIrwSPdCEH4ZBIyDcnrX6J5ew_Yp8zIXzUVtc8ANn7YSkUOATIO5RKDP2DC_vrVuy5Wre5y3FiO-9c8Fhkr1aNBvja7I7hZalVj4QUt1g0zc3DifPfb6_KLHfP3-5Udm5CkT7Ng=w442-h696-no?authuser=0">
     </div>
 	
 	<div class='photodiv1'>
-      <img class='photo3' src="https://lh3.googleusercontent.com/pw/AM-JKLUl5kKoqtMwg2nFGU1I1y2wy4pgKFz3ec3-coBf_VEDMN2eR6kPCXoIZZf8rJ1qjotNPq1adlv-hk-AG4KZn5xoYw3DeiPRCImSCqWJmKjsDUCLVUhI5a6GNUDcbvHqFQAsPguZRMyYm2s3-qWa1tB6xw=w388-h690-no?authuser=0">
+	   <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLUl5kKoqtMwg2nFGU1I1y2wy4pgKFz3ec3-coBf_VEDMN2eR6kPCXoIZZf8rJ1qjotNPq1adlv-hk-AG4KZn5xoYw3DeiPRCImSCqWJmKjsDUCLVUhI5a6GNUDcbvHqFQAsPguZRMyYm2s3-qWa1tB6xw=w388-h690-no?authuser=0">
     </div>
 	
 	<div class='photodiv2'>
-      <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV46B1pABuorpofwLgGgXVlMvAZaK9NcYwb3Q4XJxpVQ3R5AEJfBpxUs99JwQFvse8h2bsHv5dQEKRYFF_M8jEh3MT50-jYjYHuGRHmHIXGkB9eXiffHjF5fmQf7j6pv_8ik4QpluzoPSrfrvZgWBRPfA=w522-h696-no?authuser=0">
+	   <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLV46B1pABuorpofwLgGgXVlMvAZaK9NcYwb3Q4XJxpVQ3R5AEJfBpxUs99JwQFvse8h2bsHv5dQEKRYFF_M8jEh3MT50-jYjYHuGRHmHIXGkB9eXiffHjF5fmQf7j6pv_8ik4QpluzoPSrfrvZgWBRPfA=w522-h696-no?authuser=0">
 	  </div>
 	  
 	  <div class='photodiv1'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLVLblUTvPq5TFZN_l9DCTW4dokU7Rwa6UjbAQMQl57taSAm8IHZa9nPNcRZVIojEtZW7BPLZnO335Ux5kd-awxoIUD8FJYtah1acMIbMgt_WxnDAgh9qGDlq3fL4A2G9_k7sBmZi_rK1IkHcMR-0NivRQ=w412-h696-no?authuser=0">
+	     <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLVLblUTvPq5TFZN_l9DCTW4dokU7Rwa6UjbAQMQl57taSAm8IHZa9nPNcRZVIojEtZW7BPLZnO335Ux5kd-awxoIUD8FJYtah1acMIbMgt_WxnDAgh9qGDlq3fL4A2G9_k7sBmZi_rK1IkHcMR-0NivRQ=w412-h696-no?authuser=0">
     </div>
 	
 	<div class='photodiv2'>
-      <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLUMb7b8nZ8l5vasE_SD7QDBwXnTOgmyJyOfNvJyEX-95lDH63OcHdSx8zvVVZ2VeAslmSMkarOuxx1F_bvpRcQ3Ufqi-YVIEghFx-9i5juZlKAC5a1Phcw5EUhPf0X2B7fnUX-etjOppn-dR3jKuIdv_w=w522-h696-no?authuser=0">
+	   <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLUMb7b8nZ8l5vasE_SD7QDBwXnTOgmyJyOfNvJyEX-95lDH63OcHdSx8zvVVZ2VeAslmSMkarOuxx1F_bvpRcQ3Ufqi-YVIEghFx-9i5juZlKAC5a1Phcw5EUhPf0X2B7fnUX-etjOppn-dR3jKuIdv_w=w522-h696-no?authuser=0">
     </div>
 	
 	<div class='photodiv1'>
-      <img class='photo3' src="https://lh3.googleusercontent.com/pw/AM-JKLWCEF9J40Sehyx-hhFVFPwAlYw5vnFmj9ziF-cVqmH29OMn4SWxQYbmdwn9nDrF2IOQ86ErWRBSI67BfvVgZSTIbQRJPU-p4aZt0q-n_c1RApPNJXdMvQzmFnht7rzadlD1J0czda3wdlLSjkVQL5S6sg=w522-h696-no?authuser=00">
+	   <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLWCEF9J40Sehyx-hhFVFPwAlYw5vnFmj9ziF-cVqmH29OMn4SWxQYbmdwn9nDrF2IOQ86ErWRBSI67BfvVgZSTIbQRJPU-p4aZt0q-n_c1RApPNJXdMvQzmFnht7rzadlD1J0czda3wdlLSjkVQL5S6sg=w522-h696-no?authuser=00">
     </div>
 	
  <div class='photodiv2'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLWZl1i__7Ykv8XoWF7nPS0phXJqyaRbHTdelMHlLcB_6WKl5sSnRuETXtoP5Eq5wN0G1_Wke7JdEz1WZH9AaXx1Fk3uhOs8qwQphwMj26cCzX1iEg9HJIdyYPzTf5zVa5GVdZcfSDBjQ3cFqz9ejRxRQg=w388-h690-no?authuser=0">
+    <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLWZl1i__7Ykv8XoWF7nPS0phXJqyaRbHTdelMHlLcB_6WKl5sSnRuETXtoP5Eq5wN0G1_Wke7JdEz1WZH9AaXx1Fk3uhOs8qwQphwMj26cCzX1iEg9HJIdyYPzTf5zVa5GVdZcfSDBjQ3cFqz9ejRxRQg=w388-h690-no?authuser=0">
     </div>
 	 <div class='photodiv3'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLV4TgkRdvhZrYOYkHE73tvSdXtM-jtUeg1hVUaNpqmMnaC3ua0-20FRTfyLUt4YWU_58kWcEt75LkZMT9na7dx4a5cA6IpbqmqiUGzeSAqcanOxm_J7now3GkXyGo7IOZjoHKcLM8OyllflmWqkv7dRSA=w522-h696-no?authuser=0">
+	    <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLV4TgkRdvhZrYOYkHE73tvSdXtM-jtUeg1hVUaNpqmMnaC3ua0-20FRTfyLUt4YWU_58kWcEt75LkZMT9na7dx4a5cA6IpbqmqiUGzeSAqcanOxm_J7now3GkXyGo7IOZjoHKcLM8OyllflmWqkv7dRSA=w522-h696-no?authuser=0">
     </div>
 	 <div class='photodiv1'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLV1IrPDaIOYD-QNNKFfh9km2Iv6c7ocaC1tBwJwDJVlwo_cxa0Z_AdEk1FhSGppJw9xVWkf44FGHc_C7pvxpcHXDKEgNvxf4vwinkKzwjldFTP8yR7r41ZmrKxl7uQqxHXFid7AgZVPfGsy1-Li8ko2ag=w522-h696-no?authuser=0">
+	    <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLV1IrPDaIOYD-QNNKFfh9km2Iv6c7ocaC1tBwJwDJVlwo_cxa0Z_AdEk1FhSGppJw9xVWkf44FGHc_C7pvxpcHXDKEgNvxf4vwinkKzwjldFTP8yR7r41ZmrKxl7uQqxHXFid7AgZVPfGsy1-Li8ko2ag=w522-h696-no?authuser=0">
     </div>
 	 <div class='photodiv3'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLWochQrGKkINOfYSv8OenAotMdKRXLmWxlGlfEADQZiZ-yFXQdq-Dv9t2G6dekpaGkiKS9-itl5JFyXdMUR8ueLSoLweAkBtnRYJpkzWZuuzu0K52lUB6SnKuh8BAFfgKa68M74vLsmZ8PG1Zxf_GvHvA=w388-h690-no?authuser=0">
+	    <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLWochQrGKkINOfYSv8OenAotMdKRXLmWxlGlfEADQZiZ-yFXQdq-Dv9t2G6dekpaGkiKS9-itl5JFyXdMUR8ueLSoLweAkBtnRYJpkzWZuuzu0K52lUB6SnKuh8BAFfgKa68M74vLsmZ8PG1Zxf_GvHvA=w388-h690-no?authuser=0">
     </div>
 	 <div class='photodiv2'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLUD7wcTVjvwnhalkCaFNkKI2boy-iiDTqMQufE2bhpzHVeeQ-TJey1GWsJjcI5Qc_HL19rRdKp_Rdx4urfcrnjxKNcyrofK5w8LPM9lqI2kC8575N-8BZjoD6gmS1PCXzIw_3tiSb_ZS8WNvQgb1NK96w=w522-h696-no?authuser=0">
+	    <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLUD7wcTVjvwnhalkCaFNkKI2boy-iiDTqMQufE2bhpzHVeeQ-TJey1GWsJjcI5Qc_HL19rRdKp_Rdx4urfcrnjxKNcyrofK5w8LPM9lqI2kC8575N-8BZjoD6gmS1PCXzIw_3tiSb_ZS8WNvQgb1NK96w=w522-h696-no?authuser=0">
     </div>
 	 <div class='photodiv1'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLXoTbDcUhaFqcofzccmTS4NwwRR5_9shYm3FjGo4P9gmsWN146KpdDYdksPVhP27d1_2jNmTIWC5xTuxFD7E7OOCrzbGo_WRFM9WhieItuZRdO8Cv1AuxA4l4biWAoYdhmjYY0QzPBPjZY18wtJqRfyOQ=w522-h696-no?authuser=0">
+	    <img class='photo2' src="">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLXoTbDcUhaFqcofzccmTS4NwwRR5_9shYm3FjGo4P9gmsWN146KpdDYdksPVhP27d1_2jNmTIWC5xTuxFD7E7OOCrzbGo_WRFM9WhieItuZRdO8Cv1AuxA4l4biWAoYdhmjYY0QzPBPjZY18wtJqRfyOQ=w522-h696-no?authuser=0">
     </div>
 	 <div class='photodiv3'>
-      <img class='photo1' src="https://lh3.googleusercontent.com/pw/AM-JKLUzv98qkhs49QrYkPxwl4uvd8-QLYFSdaziShV1bQq4oBKTP7BFgHUIqE7o3_kvFkMAYDByJTrT0VvZOFDn7gQZM2NjcjHdcd_bko2LHTNXUPOD70cPA_xeOii38yTw3zwbObptFHkOegApykoVfqiTjQ=w522-h696-no?authuser=0">
+	    <img class='photo2' src="https://lh3.googleusercontent.com/pw/AM-JKLV_ET7YMCQU5I9vbLkCgSVq-kBzlA3sODgKNzebrMWRPfACPZirxl62ZybCBcK4GGEWkLOcNGQAoeMpav9WnrViWiIgYjCT5sB38l-Xmnvu71X1ev7Pfxq0aSU2vsooh6akBVSpsZ-91GRI8n1sn2xx8Q=w260-h360-no?authuser=0">
+      <img class='photo' src="https://lh3.googleusercontent.com/pw/AM-JKLUzv98qkhs49QrYkPxwl4uvd8-QLYFSdaziShV1bQq4oBKTP7BFgHUIqE7o3_kvFkMAYDByJTrT0VvZOFDn7gQZM2NjcjHdcd_bko2LHTNXUPOD70cPA_xeOii38yTw3zwbObptFHkOegApykoVfqiTjQ=w522-h696-no?authuser=0">
     </div>
 	
   </body>
