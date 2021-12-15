@@ -266,12 +266,30 @@
       text-align: center;
       font-size: 70px;
     }
-
+.turnmetext{
+	position:relative;
+bottom: -50px;
+right:-600px;
+font-size: 45px;
+color:red;
+}
+@-webkit-keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+#blink7 {
+  color: rgb(255,0,0);
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 0.9s linear infinite;
+  animation: pulsate 0.9s linear infinite;
+}
   </style>
 
   <head>
 
-
+<div class="turnmetext" id="blink7">Нажми меня ---></div>
     <audio controls autoplay>
 
       <source src="https://docs.google.com/uc?export=download&id=1UDGDCF0gg3CS1y8GEBcWjVtkPFPMG9De" type="audio/mpeg">
@@ -305,7 +323,7 @@
   </head>
 
   <body>
-    <div class='separator'>
+    <div class="separator">
       <hr size=2px color=#600f15 width=1310px align="left">
       <h1 style="color:#ea881b">ПРИГЛАШАЕТСЯ САМАЯ:</h1>
     </div>
